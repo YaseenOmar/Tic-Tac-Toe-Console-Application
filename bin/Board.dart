@@ -14,10 +14,4 @@ class Board {
     _cells[position] = player == Player.X ? 'X' : 'O';
     return true;
   }
-
-  void reset() {
-    for (int i = 0; i < 9; i++) {
-      _cells[i] = ' ';
-    }
-  }
 }

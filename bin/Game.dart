@@ -15,6 +15,8 @@ class Game {
     GameState state = GameState.playing;
 
     print('Welcome to Tic-Tac-Toe!');
+    _printPositionGuide();
+    print("Player X will start the game. Let's go : ");
 
     while (state == GameState.playing) {
       _printer.printBoard(_board);
@@ -37,5 +39,14 @@ class Game {
         currentPlayer = currentPlayer == Player.X ? Player.O : Player.X;
       }
     }
+  }
+
+  void _printPositionGuide() {
+    print('\nBoard positions:');
+    print(' 1 | 2 | 3 ');
+    print('-----------');
+    print(' 4 | 5 | 6 ');
+    print('-----------');
+    print(' 7 | 8 | 9 \n');
   }
 }

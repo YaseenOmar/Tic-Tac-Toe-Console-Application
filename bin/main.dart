@@ -4,6 +4,6 @@ import 'dart:io';
 void main() {
   do {
     Game().start();
-    stdout.write("Do you want to play again? (y/n): ");
+    stdout.write("Play again? Type 'y' to restart, any other key to quit: ");
   } while ((stdin.readLineSync() ?? '').toLowerCase() == 'y');
 }
